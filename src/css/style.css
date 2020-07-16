@@ -14,6 +14,11 @@
   font-style: normal;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: 'Museo Sans Light', sans-serif;
   font-weight: 300;
@@ -41,6 +46,21 @@ img {
   }
 }
 
+.section {
+  padding: 90px 0;
+}
+
+.section-subtitle {
+  display: block;
+  font-size: 16px;
+}
+
+.section-title {
+  font-size: 24px;
+  font-family: 'Museo Sans Bold',sans-serif;
+  font-weight: 700;
+}
+
 .button {
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -50,72 +70,20 @@ img {
   background-color: #ffd200;
   border: none;
   padding: 18px 30px;
-}
-
-.navbar {
-  padding: 8px 0;
-  background-color: #ffffff;
-}
-
-.navbar-block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.navbar__info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: right;
-}
-
-.navbar__adress {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.navbar__button {
-  margin-left: 30px;
   font-family: 'Museo Sans Bold',sans-serif;
   font-weight: 700;
 }
 
-.navbar__phone {
-  font-size: 20px;
-  color: #333333;
-  font-weight: 400;
-  text-decoration: none;
-  margin-top: 10px;
-  font-family: 'Museo Sans Bold',sans-serif;
-  font-weight: 700;
+.button:hover {
+  background-color: #ffdb33;
+  cursor: pointer;
 }
 
-@media (max-width: 768px) {
-  .navbar__contacts {
-    display: none;
-  }
-  .navbar__button {
-    font-size: 12px;
-    padding: 15px 26px;
-  }
-  .navbar__logo {
-    width: 90px;
-  }
+.input {
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  padding: 26px 26px;
+  font-size: 15px;
 }
 
 .hero {
@@ -130,8 +98,8 @@ img {
 }
 
 .hero-text {
-  -ms-flex-preferred-size: 42%;
-      flex-basis: 42%;
+  -ms-flex-preferred-size: 52%;
+      flex-basis: 52%;
   padding-right: 110px;
 }
 
@@ -147,8 +115,8 @@ img {
   font-family: 'Museo Sans Bold',sans-serif;
   font-weight: 700;
   font-size: 20px;
-  margin-bottom: 50px;
-  display: block;
+  margin-bottom: 70px;
+  display: inline-block;
 }
 
 .hero-list {
@@ -163,7 +131,11 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 30px;
+  margin-bottom: 25px;
+}
+
+.hero-list__item:last-child {
+  margin-bottom: 0;
 }
 
 .hero-list__image {
@@ -221,6 +193,141 @@ img {
   .hero-list__text {
     font-size: 12px;
     max-width: 240px;
+  }
+}
+
+.navbar {
+  padding: 8px 0;
+  background-color: #ffffff;
+}
+
+.navbar-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: right;
+}
+
+.navbar__adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar__button {
+  margin-left: 30px;
+}
+
+.navbar__phone {
+  font-size: 20px;
+  color: #333333;
+  text-decoration: none;
+  margin-top: 10px;
+  font-family: 'Museo Sans Bold',sans-serif;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__button {
+    font-size: 12px;
+    padding: 15px 26px;
+  }
+  .navbar__logo {
+    width: 90px;
+  }
+}
+
+.offer {
+  background: url("/src/img/offer/offer-img.png");
+  background-position: center right;
+  background-size: contain;
+  position: relative;
+}
+
+.offer::before {
+  content: '';
+  background-color: white;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.offer-block {
+  width: 50%;
+  padding-right: 90px;
+  position: relative;
+}
+
+.offer__title {
+  max-width: 360px;
+  line-height: 1.458;
+  margin-bottom: 24px;
+}
+
+.offer__subtitle {
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+
+.offer__input {
+  margin-bottom: 30px;
+  width: 240px;
+}
+
+.offer__input:first-child {
+  margin-right: 10px;
+}
+
+.offer__button {
+  padding: 27px 100px;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 14px;
+    padding: 18px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer {
+    background: white;
+  }
+  .offer-block {
+    padding-right: 0;
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */

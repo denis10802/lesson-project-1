@@ -16,13 +16,11 @@
 		flex-direction: column;
 	}
 	&__button{
-		margin-left: 30px;
-		@include bold;
+		margin-left: 30px;		
 	}
 	&__phone{
 		font-size: 20px;
-		color: $text-color;
-		font-weight: 400;
+		color: $text-color;		
 		text-decoration: none;
 		margin-top: 10px;
 		@include bold;

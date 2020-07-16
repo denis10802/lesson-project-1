@@ -25,7 +25,7 @@
 	&__subtitle{
 		max-width: 250px;			
 		margin-bottom: 30px;
-	}
+	}	
 	&__input{		
 		margin-bottom: 30px;
 		width: 240px;
@@ -35,10 +35,35 @@
 	}
 	&__button{
 		padding: 27px 100px;
-		width: 100%;		
+		width: 100%;	
+		margin-bottom: 30px;	
+	}
+	&-block__text{
+
+		display: flex;
+		font-size: 15px;
+		justify-content: space-between;
+		
+	}
+	&__lowtitle{
+		line-height: 1.6;	
+		display: block;	
+		width: 192px;		
+	}
+	&__lowtitle1{
+		line-height: 1.6;	
+		display: block;	
+		width: 225px;
+	}
+	&__number{
+		display: block;
+		width: 225px;
+		@include bold;
 	}
 	
 }
+
+
 @media (max-width: 1200px){
 	.offer{
 		background-size: cover;			
@@ -49,6 +74,13 @@
 		&__button{
 			font-size: 14px;			
 			padding: 18px 60px;
+		}
+		&-block__text{
+			flex-direction: column;
+			justify-content: space-between;
+		}
+		&__lowtitle1{
+			margin-bottom: 18px;
 		}
 	}
 }

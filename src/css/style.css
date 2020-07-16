@@ -305,6 +305,36 @@ img {
 .offer__button {
   padding: 27px 100px;
   width: 100%;
+  margin-bottom: 30px;
+}
+
+.offer-block__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.offer__lowtitle {
+  line-height: 1.6;
+  display: block;
+  width: 192px;
+}
+
+.offer__lowtitle1 {
+  line-height: 1.6;
+  display: block;
+  width: 225px;
+}
+
+.offer__number {
+  display: block;
+  width: 225px;
+  font-family: 'Museo Sans Bold',sans-serif;
+  font-weight: 700;
 }
 
 @media (max-width: 1200px) {
@@ -318,6 +348,18 @@ img {
   .offer__button {
     font-size: 14px;
     padding: 18px 60px;
+  }
+  .offer-block__text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .offer__lowtitle1 {
+    margin-bottom: 18px;
   }
 }
 

@@ -31,6 +31,7 @@ img{
 	&-title{
 		font-size: 24px;
 		@include bold;
+		text-align: center;
 	}
 	
 }
@@ -48,6 +49,10 @@ img{
 		background-color: lighten($color: $main-color, $amount: +10);
 		cursor: pointer;
 	}
+	&:focus{
+		outline: none;
+	}
+	
 }
 
 
@@ -55,6 +60,23 @@ img{
 	border: 1px solid $border-input;
 	border-radius: 10px;
 	padding:  26px 26px;
-	font-size: 15px;	
+	font-size: 15px;
+	transition: 0.2s;	
+	-webkit-transition: 0.2s;
+	-moz-transition: 0.2s;
+	-ms-transition: 0.2s;
+	-o-transition: 0.2s;
+	&:focus
+	{
+		outline: none;
+	}	
+	&:active{
+		border-color: $main-color;
+	}
 }
+.arrows {
+	&__left, &__right {
+		cursor: pointer;
 
+	}
+}

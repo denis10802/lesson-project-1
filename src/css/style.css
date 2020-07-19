@@ -59,6 +59,7 @@ img {
   font-size: 24px;
   font-family: 'Museo Sans Bold',sans-serif;
   font-weight: 700;
+  text-align: center;
 }
 
 .button {
@@ -79,11 +80,32 @@ img {
   cursor: pointer;
 }
 
+.button:focus {
+  outline: none;
+}
+
 .input {
   border: 1px solid #dddddd;
   border-radius: 10px;
   padding: 26px 26px;
   font-size: 15px;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  -ms-transition: 0.2s;
+  -o-transition: 0.2s;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.input:active {
+  border-color: #ffd200;
+}
+
+.arrows__left, .arrows__right {
+  cursor: pointer;
 }
 
 .hero {
@@ -284,8 +306,9 @@ img {
 
 .offer__title {
   max-width: 360px;
-  line-height: 1.458;
+  line-height: 35px;
   margin-bottom: 24px;
+  text-align: left;
 }
 
 .offer__subtitle {
@@ -371,5 +394,77 @@ img {
     padding-right: 0;
     width: 100%;
   }
+}
+
+.portfolio {
+  background: #f5f5f5 url("/src/img/portfolio/portfolio-pattern.jpg") repeat-y center left;
+  background-size: 50%;
+}
+
+.portfolio__title {
+  max-width: 600px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  margin-top: 68px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.slider__image {
+  margin: auto;
+}
+
+.modal {
+  position: fixed;
+  left: 0px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.modal_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-dialog {
+  position: relative;
+  margin: auto;
+  max-width: 450px;
+  width: 90%;
+  min-width: 200px;
+  padding: 40px;
+  background-color: #fff;
+}
+
+.modal-dialog__close {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  font-size: 35px;
+  font-weight: 300;
+  cursor: pointer;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  width: 45px;
+  text-align: center;
+  background-color: black;
 }
 /*# sourceMappingURL=style.css.map */

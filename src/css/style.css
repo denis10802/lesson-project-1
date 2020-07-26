@@ -736,7 +736,7 @@ img {
 }
 
 .offer {
-  background: url("src/img/offer/offer-img.png");
+  background-image: url("src/img/offer/offer-img.png");
   background-position: center right;
   background-size: contain;
   position: relative;
@@ -1046,7 +1046,7 @@ img {
 }
 
 .brif {
-  background-image: url(/src/img/brif/brif_bg.png), url(/src/img/brif/formBrif-bg-color.jpg);
+  background-image: url("../img/brif/brif_bg.png"), url("../img/brif/formBrif-bg-color.jpg");
   background-position: left center, center right;
   background-size: 50%, contain;
   background-repeat: repeat-y, no-repeat;
@@ -1215,7 +1215,7 @@ img {
 }
 
 .brif {
-  background-image: url(/src/img/brif/brif_bg.png), url(/src/img/brif/formBrif-bg-color.jpg);
+  background-image: url("../img/brif/brif_bg.png"), url("../img/brif/formBrif-bg-color.jpg");
   background-position: left center, center right;
   background-size: 50%, contain;
   background-repeat: repeat-y, no-repeat;

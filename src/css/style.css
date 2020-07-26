@@ -1046,7 +1046,7 @@ img {
 }
 
 .brif {
-  background-image: url("../img/brif/brif_bg.png"), url("../img/brif/formBrif-bg-color.jpg");
+  background-image: url(../img/brif/brif_bg.png), url(../img/brif/formBrif-bg-color.jpg);
   background-position: left center, center right;
   background-size: 50%, contain;
   background-repeat: repeat-y, no-repeat;
@@ -1157,7 +1157,7 @@ img {
 
 @media (max-width: 1200px) {
   .brif {
-    background-image: url(/src/img/brif/brif_bg.png), url(/src/img/brif/formBrif-bg-color.jpg);
+    background-image: url(../img/brif/brif_bg.png), url(../img/brif/formBrif-bg-color.jpg);
     background-position: left center, center right;
     background-size: 50% , cover;
     background-repeat: repeat-y, no-repeat;
@@ -1193,7 +1193,7 @@ img {
 
 @media (max-width: 768px) {
   .brif {
-    background-image: url(/src/img/brif/brif_bg.png), url(/src/img/brif/formBrif-bg-color.jpg);
+    background-image: url(../img/brif/brif_bg.png), url(../img/brif/formBrif-bg-color.jpg);
     background-position: top center, center bottom;
     background-size: 100% 45%, cover;
     background-repeat: repeat-x, no-repeat;
@@ -1215,7 +1215,7 @@ img {
 }
 
 .brif {
-  background-image: url("../img/brif/brif_bg.png"), url("../img/brif/formBrif-bg-color.jpg");
+  background-image: url(../img/brif/brif_bg.png), url(../img/brif/formBrif-bg-color.jpg);
   background-position: left center, center right;
   background-size: 50%, contain;
   background-repeat: repeat-y, no-repeat;
@@ -1326,7 +1326,7 @@ img {
 
 @media (max-width: 1200px) {
   .brif {
-    background-image: url(/src/img/brif/brif_bg.png), url(/src/img/brif/formBrif-bg-color.jpg);
+    background-image: url(../img/brif/brif_bg.png), url(../img/brif/formBrif-bg-color.jpg);
     background-position: left center, center right;
     background-size: 50% , cover;
     background-repeat: repeat-y, no-repeat;
@@ -1362,7 +1362,7 @@ img {
 
 @media (max-width: 768px) {
   .brif {
-    background-image: url(/src/img/brif/brif_bg.png), url(/src/img/brif/formBrif-bg-color.jpg);
+    background-image: url(../img/brif/brif_bg.png), url(../img/brif/formBrif-bg-color.jpg);
     background-position: top center, center bottom;
     background-size: 100% 45%, cover;
     background-repeat: repeat-x, no-repeat;

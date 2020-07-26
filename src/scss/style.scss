@@ -1,6 +1,12 @@
+@import "normalize";
 @import "colors";
 @import "fonts";
 @import "interfase";
+
+@import "animate/_base.css";
+@import "animate/fading_entrances/fadeInUp.css";
+@import "slick";
+
 @import "blocks/hero";
 @import "blocks/navbar";
 @import "blocks/offer"; 

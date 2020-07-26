@@ -67,6 +67,13 @@ img {
   text-align: center;
 }
 
+@media (min-width: 768px) {
+  .button:hover {
+    background-color: #ffdb33;
+    cursor: pointer;
+  }
+}
+
 .button {
   border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -78,11 +85,6 @@ img {
   padding: 18px 30px;
   font-family: 'Museo Sans Bold',sans-serif;
   font-weight: 700;
-}
-
-.button:hover {
-  background-color: #ffdb33;
-  cursor: pointer;
 }
 
 .button:focus {
@@ -425,6 +427,12 @@ img {
 
 .slider__image {
   margin: auto;
+}
+
+@media (max-width: 1200px) {
+  .slider__image {
+    padding: 5px;
+  }
 }
 
 .modal {

@@ -736,7 +736,7 @@ img {
 }
 
 .offer {
-  background-image: url("src/img/offer/offer-img.png");
+  background-image: url(../img/offer/offer-img.png);
   background-position: center right;
   background-size: contain;
   position: relative;
@@ -851,7 +851,7 @@ img {
 }
 
 .portfolio {
-  background: #f5f5f5 url("src/img/portfolio/portfolio-pattern.jpg") repeat-y center left;
+  background: #f5f5f5 url(../img/portfolio/portfolio-pattern.jpg) repeat-y center left;
   background-size: 50%;
 }
 

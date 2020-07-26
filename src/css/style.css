@@ -736,7 +736,7 @@ img {
 }
 
 .offer {
-  background: url(/src/img/offer/offer-img.png);
+  background: url(src/img/offer/offer-img.png);
   background-position: center right;
   background-size: contain;
   position: relative;
